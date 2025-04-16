@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		233DA4AF2BDB993900BD1487 /* AgentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA4AE2BDB993900BD1487 /* AgentDTO.swift */; };
+		233DA52B2BDBC62500BD1487 /* AbilitiesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA52A2BDBC62500BD1487 /* AbilitiesDTO.swift */; };
+		233DA52D2BDBC67500BD1487 /* RoleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA52C2BDBC67500BD1487 /* RoleDTO.swift */; };
+		233DA52F2BDBC76200BD1487 /* AgentsResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA52E2BDBC76200BD1487 /* AgentsResponseDTO.swift */; };
+		233DA5322BDBC85800BD1487 /* AgentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA5312BDBC85800BD1487 /* AgentRepository.swift */; };
+		233DA5352BDBC8D100BD1487 /* AgentDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA5342BDBC8D100BD1487 /* AgentDataSourceProtocol.swift */; };
+		233DA5372BDBC8DC00BD1487 /* AgentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA5362BDBC8DC00BD1487 /* AgentDataSource.swift */; };
+		233DA53A2BDBC9BC00BD1487 /* AgentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA5392BDBC9BC00BD1487 /* AgentEndpoint.swift */; };
+		233DA53F2BDBD0C200BD1487 /* AgentRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA53E2BDBD0C200BD1487 /* AgentRepositoryProtocol.swift */; };
+		233DA5412BDBD0F400BD1487 /* AgentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA5402BDBD0F400BD1487 /* AgentUseCase.swift */; };
+		233DA5432BDBD19500BD1487 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DA5422BDBD19500BD1487 /* Agent.swift */; };
+		2343737C2BDFA781007D5007 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2343737B2BDFA781007D5007 /* IQKeyboardManagerSwift */; };
+		234373802BDFAEF0007D5007 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343737F2BDFAEF0007D5007 /* Colours.swift */; };
+		23449BCA2BE1180700AE1410 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449BC92BE1180700AE1410 /* Poppins-Black.ttf */; };
+		23449BD22BE12ABA00AE1410 /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449BCD2BE12ABA00AE1410 /* Teko-SemiBold.ttf */; };
+		23449BD32BE12ABA00AE1410 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449BCE2BE12ABA00AE1410 /* Teko-Light.ttf */; };
+		23449BD42BE12ABA00AE1410 /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449BCF2BE12ABA00AE1410 /* Teko-Bold.ttf */; };
+		23449BD52BE12ABA00AE1410 /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449BD02BE12ABA00AE1410 /* Teko-Medium.ttf */; };
+		23449BD62BE12ABA00AE1410 /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449BD12BE12ABA00AE1410 /* Teko-Regular.ttf */; };
+		23449C182BE1306A00AE1410 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C102BE1306A00AE1410 /* Poppins-ExtraBold.ttf */; };
+		23449C192BE1306A00AE1410 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C112BE1306A00AE1410 /* Poppins-Light.ttf */; };
+		23449C1A2BE1306A00AE1410 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C122BE1306A00AE1410 /* Poppins-Medium.ttf */; };
+		23449C1B2BE1306A00AE1410 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C132BE1306A00AE1410 /* Poppins-SemiBold.ttf */; };
+		23449C1C2BE1306A00AE1410 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C142BE1306A00AE1410 /* Poppins-Thin.ttf */; };
+		23449C1D2BE1306A00AE1410 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C152BE1306A00AE1410 /* Poppins-ExtraLight.ttf */; };
+		23449C1E2BE1306A00AE1410 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C162BE1306A00AE1410 /* Poppins-Regular.ttf */; };
+		23449C1F2BE1306A00AE1410 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23449C172BE1306A00AE1410 /* Poppins-Bold.ttf */; };
+		236EBA422BDD476500951D89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EBA412BDD476500951D89 /* HomeView.swift */; };
+		236EBA442BDD476F00951D89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EBA432BDD476F00951D89 /* HomeViewModel.swift */; };
+		236EBA462BDD477B00951D89 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EBA452BDD477B00951D89 /* HomeProtocol.swift */; };
+		236EBA482BDD478400951D89 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EBA472BDD478400951D89 /* HomeBuilder.swift */; };
+		236EBA4B2BDD49F900951D89 /* AgentCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236EBA4A2BDD49F900951D89 /* AgentCustomView.swift */; };
+		239892242D9D858500CD7D4A /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239892232D9D858500CD7D4A /* Abilities.swift */; };
+		239892262D9D859100CD7D4A /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239892252D9D859100CD7D4A /* Role.swift */; };
+		23B9361D2BD642FA002710D4 /* ValorantUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9361C2BD642FA002710D4 /* ValorantUIApp.swift */; };
+		23B9361F2BD642FA002710D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9361E2BD642FA002710D4 /* ContentView.swift */; };
+		23B936212BD642FC002710D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B936202BD642FC002710D4 /* Assets.xcassets */; };
+		23B936252BD642FC002710D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B936242BD642FC002710D4 /* Preview Assets.xcassets */; };
+		23B9362F2BD642FC002710D4 /* ValorantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9362E2BD642FC002710D4 /* ValorantUITests.swift */; };
+		23B936392BD642FC002710D4 /* ValorantUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B936382BD642FC002710D4 /* ValorantUIUITests.swift */; };
+		23B9363B2BD642FC002710D4 /* ValorantUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9363A2BD642FC002710D4 /* ValorantUIUITestsLaunchTests.swift */; };
+		23B9364F2BD64CD8002710D4 /* AgentDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B9364E2BD64CD8002710D4 /* AgentDetailBuilder.swift */; };
+		23B936532BD64CF4002710D4 /* AgentDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B936522BD64CF4002710D4 /* AgentDetailProtocol.swift */; };
+		23B936572BD64D21002710D4 /* AgentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B936562BD64D21002710D4 /* AgentDetailViewModel.swift */; };
+		23B936592BD66126002710D4 /* AgentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B936582BD66126002710D4 /* AgentDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23B9362B2BD642FC002710D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23B936112BD642FA002710D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23B936182BD642FA002710D4;
+			remoteInfo = ValorantUI;
+		};
+		23B936352BD642FC002710D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23B936112BD642FA002710D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23B936182BD642FA002710D4;
+			remoteInfo = ValorantUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		233DA4AE2BDB993900BD1487 /* AgentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDTO.swift; sourceTree = "<group>"; };
+		233DA52A2BDBC62500BD1487 /* AbilitiesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesDTO.swift; sourceTree = "<group>"; };
+		233DA52C2BDBC67500BD1487 /* RoleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleDTO.swift; sourceTree = "<group>"; };
+		233DA52E2BDBC76200BD1487 /* AgentsResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsResponseDTO.swift; sourceTree = "<group>"; };
+		233DA5312BDBC85800BD1487 /* AgentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRepository.swift; sourceTree = "<group>"; };
+		233DA5342BDBC8D100BD1487 /* AgentDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDataSourceProtocol.swift; sourceTree = "<group>"; };
+		233DA5362BDBC8DC00BD1487 /* AgentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDataSource.swift; sourceTree = "<group>"; };
+		233DA5392BDBC9BC00BD1487 /* AgentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEndpoint.swift; sourceTree = "<group>"; };
+		233DA53E2BDBD0C200BD1487 /* AgentRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRepositoryProtocol.swift; sourceTree = "<group>"; };
+		233DA5402BDBD0F400BD1487 /* AgentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentUseCase.swift; sourceTree = "<group>"; };
+		233DA5422BDBD19500BD1487 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		2343737F2BDFAEF0007D5007 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		23449BC72BE1142B00AE1410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		23449BC92BE1180700AE1410 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		23449BCD2BE12ABA00AE1410 /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.ttf"; sourceTree = "<group>"; };
+		23449BCE2BE12ABA00AE1410 /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
+		23449BCF2BE12ABA00AE1410 /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
+		23449BD02BE12ABA00AE1410 /* Teko-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.ttf"; sourceTree = "<group>"; };
+		23449BD12BE12ABA00AE1410 /* Teko-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.ttf"; sourceTree = "<group>"; };
+		23449C0F2BE12D5400AE1410 /* ValorantUI.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ValorantUI.entitlements; sourceTree = "<group>"; };
+		23449C102BE1306A00AE1410 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		23449C112BE1306A00AE1410 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		23449C122BE1306A00AE1410 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		23449C132BE1306A00AE1410 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		23449C142BE1306A00AE1410 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		23449C152BE1306A00AE1410 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		23449C162BE1306A00AE1410 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		23449C172BE1306A00AE1410 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		236EBA412BDD476500951D89 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		236EBA432BDD476F00951D89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		236EBA452BDD477B00951D89 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		236EBA472BDD478400951D89 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		236EBA4A2BDD49F900951D89 /* AgentCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCustomView.swift; sourceTree = "<group>"; };
+		239892232D9D858500CD7D4A /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
+		239892252D9D859100CD7D4A /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		23B936192BD642FA002710D4 /* ValorantUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B9361C2BD642FA002710D4 /* ValorantUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantUIApp.swift; sourceTree = "<group>"; };
+		23B9361E2BD642FA002710D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		23B936202BD642FC002710D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23B936242BD642FC002710D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23B9362A2BD642FC002710D4 /* ValorantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B9362E2BD642FC002710D4 /* ValorantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantUITests.swift; sourceTree = "<group>"; };
+		23B936342BD642FC002710D4 /* ValorantUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B936382BD642FC002710D4 /* ValorantUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantUIUITests.swift; sourceTree = "<group>"; };
+		23B9363A2BD642FC002710D4 /* ValorantUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23B9364E2BD64CD8002710D4 /* AgentDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailBuilder.swift; sourceTree = "<group>"; };
+		23B936522BD64CF4002710D4 /* AgentDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailProtocol.swift; sourceTree = "<group>"; };
+		23B936562BD64D21002710D4 /* AgentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewModel.swift; sourceTree = "<group>"; };
+		23B936582BD66126002710D4 /* AgentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23B936162BD642FA002710D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2343737C2BDFA781007D5007 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B936272BD642FC002710D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B936312BD642FC002710D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		233DA4A42BDAA38200BD1487 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				236EBA492BDD49DE00951D89 /* AgentCustomView */,
+				236EBA472BDD478400951D89 /* HomeBuilder.swift */,
+				236EBA452BDD477B00951D89 /* HomeProtocol.swift */,
+				236EBA432BDD476F00951D89 /* HomeViewModel.swift */,
+				236EBA412BDD476500951D89 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		233DA4AD2BDB988B00BD1487 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				233DA4AE2BDB993900BD1487 /* AgentDTO.swift */,
+				233DA52A2BDBC62500BD1487 /* AbilitiesDTO.swift */,
+				233DA52C2BDBC67500BD1487 /* RoleDTO.swift */,
+				233DA52E2BDBC76200BD1487 /* AgentsResponseDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		233DA5302BDBC84400BD1487 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				233DA5312BDBC85800BD1487 /* AgentRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		233DA5332BDBC8B200BD1487 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				233DA5342BDBC8D100BD1487 /* AgentDataSourceProtocol.swift */,
+				233DA5362BDBC8DC00BD1487 /* AgentDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		233DA5382BDBC98A00BD1487 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				233DA5392BDBC9BC00BD1487 /* AgentEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		233DA53B2BDBCE4300BD1487 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				233DA5402BDBD0F400BD1487 /* AgentUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		233DA53C2BDBCE4B00BD1487 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				233DA53E2BDBD0C200BD1487 /* AgentRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		233DA53D2BDBCE5400BD1487 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				233DA5422BDBD19500BD1487 /* Agent.swift */,
+				239892232D9D858500CD7D4A /* Abilities.swift */,
+				239892252D9D859100CD7D4A /* Role.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2343737D2BDFAED6007D5007 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2343737E2BDFAEDE007D5007 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2343737E2BDFAEDE007D5007 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2343737F2BDFAEF0007D5007 /* Colours.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		236EBA492BDD49DE00951D89 /* AgentCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				236EBA4A2BDD49F900951D89 /* AgentCustomView.swift */,
+			);
+			path = AgentCustomView;
+			sourceTree = "<group>";
+		};
+		23B936102BD642FA002710D4 = {
+			isa = PBXGroup;
+			children = (
+				23B9361B2BD642FA002710D4 /* ValorantUI */,
+				23B9362D2BD642FC002710D4 /* ValorantUITests */,
+				23B936372BD642FC002710D4 /* ValorantUIUITests */,
+				23B9361A2BD642FA002710D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23B9361A2BD642FA002710D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23B936192BD642FA002710D4 /* ValorantUI.app */,
+				23B9362A2BD642FC002710D4 /* ValorantUITests.xctest */,
+				23B936342BD642FC002710D4 /* ValorantUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23B9361B2BD642FA002710D4 /* ValorantUI */ = {
+			isa = PBXGroup;
+			children = (
+				23449BC72BE1142B00AE1410 /* Info.plist */,
+				2343737D2BDFAED6007D5007 /* Helpers */,
+				23B9364A2BD64567002710D4 /* Data */,
+				23B936492BD6455B002710D4 /* Domain */,
+				23B936482BD6454C002710D4 /* Presentation */,
+				23B936472BD64543002710D4 /* Resources */,
+				23B936232BD642FC002710D4 /* Preview Content */,
+			);
+			path = ValorantUI;
+			sourceTree = "<group>";
+		};
+		23B936232BD642FC002710D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23B936242BD642FC002710D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23B9362D2BD642FC002710D4 /* ValorantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23B9362E2BD642FC002710D4 /* ValorantUITests.swift */,
+			);
+			path = ValorantUITests;
+			sourceTree = "<group>";
+		};
+		23B936372BD642FC002710D4 /* ValorantUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23B936382BD642FC002710D4 /* ValorantUIUITests.swift */,
+				23B9363A2BD642FC002710D4 /* ValorantUIUITestsLaunchTests.swift */,
+			);
+			path = ValorantUIUITests;
+			sourceTree = "<group>";
+		};
+		23B936472BD64543002710D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23449C172BE1306A00AE1410 /* Poppins-Bold.ttf */,
+				23449C102BE1306A00AE1410 /* Poppins-ExtraBold.ttf */,
+				23449C152BE1306A00AE1410 /* Poppins-ExtraLight.ttf */,
+				23449C112BE1306A00AE1410 /* Poppins-Light.ttf */,
+				23449C122BE1306A00AE1410 /* Poppins-Medium.ttf */,
+				23449C162BE1306A00AE1410 /* Poppins-Regular.ttf */,
+				23449C132BE1306A00AE1410 /* Poppins-SemiBold.ttf */,
+				23449C142BE1306A00AE1410 /* Poppins-Thin.ttf */,
+				23449BCF2BE12ABA00AE1410 /* Teko-Bold.ttf */,
+				23449BCE2BE12ABA00AE1410 /* Teko-Light.ttf */,
+				23449BD02BE12ABA00AE1410 /* Teko-Medium.ttf */,
+				23449BD12BE12ABA00AE1410 /* Teko-Regular.ttf */,
+				23449BCD2BE12ABA00AE1410 /* Teko-SemiBold.ttf */,
+				23449BC92BE1180700AE1410 /* Poppins-Black.ttf */,
+				23449C0F2BE12D5400AE1410 /* ValorantUI.entitlements */,
+				23B936202BD642FC002710D4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		23B936482BD6454C002710D4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				23B9364B2BD64C75002710D4 /* App */,
+				23B9364D2BD64CB8002710D4 /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		23B936492BD6455B002710D4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				233DA53D2BDBCE5400BD1487 /* Entity */,
+				233DA53C2BDBCE4B00BD1487 /* Repository */,
+				233DA53B2BDBCE4300BD1487 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		23B9364A2BD64567002710D4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				233DA5382BDBC98A00BD1487 /* Endpoints */,
+				233DA5332BDBC8B200BD1487 /* DataSource */,
+				233DA5302BDBC84400BD1487 /* Repository */,
+				233DA4AD2BDB988B00BD1487 /* DTOs */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		23B9364B2BD64C75002710D4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				23B9361C2BD642FA002710D4 /* ValorantUIApp.swift */,
+				23B9361E2BD642FA002710D4 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		23B9364C2BD64C8E002710D4 /* AgentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				23B9364E2BD64CD8002710D4 /* AgentDetailBuilder.swift */,
+				23B936522BD64CF4002710D4 /* AgentDetailProtocol.swift */,
+				23B936562BD64D21002710D4 /* AgentDetailViewModel.swift */,
+				23B936582BD66126002710D4 /* AgentDetailView.swift */,
+			);
+			path = AgentDetail;
+			sourceTree = "<group>";
+		};
+		23B9364D2BD64CB8002710D4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				233DA4A42BDAA38200BD1487 /* Home */,
+				23B9364C2BD64C8E002710D4 /* AgentDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23B936182BD642FA002710D4 /* ValorantUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B9363E2BD642FC002710D4 /* Build configuration list for PBXNativeTarget "ValorantUI" */;
+			buildPhases = (
+				23B936152BD642FA002710D4 /* Sources */,
+				23B936162BD642FA002710D4 /* Frameworks */,
+				23B936172BD642FA002710D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValorantUI;
+			packageProductDependencies = (
+				2343737B2BDFA781007D5007 /* IQKeyboardManagerSwift */,
+			);
+			productName = ValorantUI;
+			productReference = 23B936192BD642FA002710D4 /* ValorantUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23B936292BD642FC002710D4 /* ValorantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B936412BD642FC002710D4 /* Build configuration list for PBXNativeTarget "ValorantUITests" */;
+			buildPhases = (
+				23B936262BD642FC002710D4 /* Sources */,
+				23B936272BD642FC002710D4 /* Frameworks */,
+				23B936282BD642FC002710D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B9362C2BD642FC002710D4 /* PBXTargetDependency */,
+			);
+			name = ValorantUITests;
+			productName = ValorantUITests;
+			productReference = 23B9362A2BD642FC002710D4 /* ValorantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23B936332BD642FC002710D4 /* ValorantUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B936442BD642FC002710D4 /* Build configuration list for PBXNativeTarget "ValorantUIUITests" */;
+			buildPhases = (
+				23B936302BD642FC002710D4 /* Sources */,
+				23B936312BD642FC002710D4 /* Frameworks */,
+				23B936322BD642FC002710D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B936362BD642FC002710D4 /* PBXTargetDependency */,
+			);
+			name = ValorantUIUITests;
+			productName = ValorantUIUITests;
+			productReference = 23B936342BD642FC002710D4 /* ValorantUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23B936112BD642FA002710D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					23B936182BD642FA002710D4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					23B936292BD642FC002710D4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 23B936182BD642FA002710D4;
+					};
+					23B936332BD642FC002710D4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 23B936182BD642FA002710D4;
+					};
+				};
+			};
+			buildConfigurationList = 23B936142BD642FA002710D4 /* Build configuration list for PBXProject "ValorantUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23B936102BD642FA002710D4;
+			packageReferences = (
+				2343737A2BDFA781007D5007 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 23B9361A2BD642FA002710D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23B936182BD642FA002710D4 /* ValorantUI */,
+				23B936292BD642FC002710D4 /* ValorantUITests */,
+				23B936332BD642FC002710D4 /* ValorantUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23B936172BD642FA002710D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23449BD42BE12ABA00AE1410 /* Teko-Bold.ttf in Resources */,
+				23449C192BE1306A00AE1410 /* Poppins-Light.ttf in Resources */,
+				23449C1A2BE1306A00AE1410 /* Poppins-Medium.ttf in Resources */,
+				23449C1F2BE1306A00AE1410 /* Poppins-Bold.ttf in Resources */,
+				23449C1C2BE1306A00AE1410 /* Poppins-Thin.ttf in Resources */,
+				23449C182BE1306A00AE1410 /* Poppins-ExtraBold.ttf in Resources */,
+				23449BD22BE12ABA00AE1410 /* Teko-SemiBold.ttf in Resources */,
+				23449C1D2BE1306A00AE1410 /* Poppins-ExtraLight.ttf in Resources */,
+				23449BD52BE12ABA00AE1410 /* Teko-Medium.ttf in Resources */,
+				23449BCA2BE1180700AE1410 /* Poppins-Black.ttf in Resources */,
+				23449C1E2BE1306A00AE1410 /* Poppins-Regular.ttf in Resources */,
+				23B936252BD642FC002710D4 /* Preview Assets.xcassets in Resources */,
+				23B936212BD642FC002710D4 /* Assets.xcassets in Resources */,
+				23449C1B2BE1306A00AE1410 /* Poppins-SemiBold.ttf in Resources */,
+				23449BD62BE12ABA00AE1410 /* Teko-Regular.ttf in Resources */,
+				23449BD32BE12ABA00AE1410 /* Teko-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B936282BD642FC002710D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B936322BD642FC002710D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23B936152BD642FA002710D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236EBA442BDD476F00951D89 /* HomeViewModel.swift in Sources */,
+				233DA5432BDBD19500BD1487 /* Agent.swift in Sources */,
+				233DA53A2BDBC9BC00BD1487 /* AgentEndpoint.swift in Sources */,
+				236EBA482BDD478400951D89 /* HomeBuilder.swift in Sources */,
+				233DA5352BDBC8D100BD1487 /* AgentDataSourceProtocol.swift in Sources */,
+				236EBA462BDD477B00951D89 /* HomeProtocol.swift in Sources */,
+				23B9361F2BD642FA002710D4 /* ContentView.swift in Sources */,
+				236EBA4B2BDD49F900951D89 /* AgentCustomView.swift in Sources */,
+				239892242D9D858500CD7D4A /* Abilities.swift in Sources */,
+				233DA5372BDBC8DC00BD1487 /* AgentDataSource.swift in Sources */,
+				23B936572BD64D21002710D4 /* AgentDetailViewModel.swift in Sources */,
+				233DA5412BDBD0F400BD1487 /* AgentUseCase.swift in Sources */,
+				233DA52F2BDBC76200BD1487 /* AgentsResponseDTO.swift in Sources */,
+				233DA52B2BDBC62500BD1487 /* AbilitiesDTO.swift in Sources */,
+				234373802BDFAEF0007D5007 /* Colours.swift in Sources */,
+				236EBA422BDD476500951D89 /* HomeView.swift in Sources */,
+				23B9361D2BD642FA002710D4 /* ValorantUIApp.swift in Sources */,
+				23B9364F2BD64CD8002710D4 /* AgentDetailBuilder.swift in Sources */,
+				233DA52D2BDBC67500BD1487 /* RoleDTO.swift in Sources */,
+				233DA53F2BDBD0C200BD1487 /* AgentRepositoryProtocol.swift in Sources */,
+				233DA4AF2BDB993900BD1487 /* AgentDTO.swift in Sources */,
+				23B936532BD64CF4002710D4 /* AgentDetailProtocol.swift in Sources */,
+				23B936592BD66126002710D4 /* AgentDetailView.swift in Sources */,
+				233DA5322BDBC85800BD1487 /* AgentRepository.swift in Sources */,
+				239892262D9D859100CD7D4A /* Role.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B936262BD642FC002710D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B9362F2BD642FC002710D4 /* ValorantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B936302BD642FC002710D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B936392BD642FC002710D4 /* ValorantUIUITests.swift in Sources */,
+				23B9363B2BD642FC002710D4 /* ValorantUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23B9362C2BD642FC002710D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23B936182BD642FA002710D4 /* ValorantUI */;
+			targetProxy = 23B9362B2BD642FC002710D4 /* PBXContainerItemProxy */;
+		};
+		23B936362BD642FC002710D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23B936182BD642FA002710D4 /* ValorantUI */;
+			targetProxy = 23B936352BD642FC002710D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23B9363C2BD642FC002710D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23B9363D2BD642FC002710D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		23B9363F2BD642FC002710D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ValorantUI/Resources/ValorantUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ValorantUI/Preview Content\"";
+				DEVELOPMENT_TEAM = XR5368M8BQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ValorantUI/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduard.ValorantUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23B936402BD642FC002710D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ValorantUI/Resources/ValorantUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ValorantUI/Preview Content\"";
+				DEVELOPMENT_TEAM = XR5368M8BQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ValorantUI/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduard.ValorantUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23B936422BD642FC002710D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XR5368M8BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduard.ValorantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValorantUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ValorantUI";
+			};
+			name = Debug;
+		};
+		23B936432BD642FC002710D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XR5368M8BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduard.ValorantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValorantUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ValorantUI";
+			};
+			name = Release;
+		};
+		23B936452BD642FC002710D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XR5368M8BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduard.ValorantUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ValorantUI;
+			};
+			name = Debug;
+		};
+		23B936462BD642FC002710D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XR5368M8BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduard.ValorantUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ValorantUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23B936142BD642FA002710D4 /* Build configuration list for PBXProject "ValorantUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B9363C2BD642FC002710D4 /* Debug */,
+				23B9363D2BD642FC002710D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B9363E2BD642FC002710D4 /* Build configuration list for PBXNativeTarget "ValorantUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B9363F2BD642FC002710D4 /* Debug */,
+				23B936402BD642FC002710D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B936412BD642FC002710D4 /* Build configuration list for PBXNativeTarget "ValorantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B936422BD642FC002710D4 /* Debug */,
+				23B936432BD642FC002710D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B936442BD642FC002710D4 /* Build configuration list for PBXNativeTarget "ValorantUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B936452BD642FC002710D4 /* Debug */,
+				23B936462BD642FC002710D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2343737A2BDFA781007D5007 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2343737B2BDFA781007D5007 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2343737A2BDFA781007D5007 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23B936112BD642FA002710D4 /* Project object */;
+}
