@@ -12,7 +12,6 @@ struct Agent {
     var displayName: String
     var description: String
     var developerName: String
-//    var developerName:
     var displayIcon: String
     var displayIconSmall: String
     var bustPortrait: String
@@ -22,12 +21,7 @@ struct Agent {
     var background: String
     var backgroundGradientColors: [String]
 //    var assetPath: String
-//    var isFullPortraitRightFacing: Bool
-//    var isPlayableCharacter: Bool
-//    var isAvailableForTest: Bool
-//    var isBaseContent: Bool
     var role: Role
-//    var recruitmentData:
     var abilities: [Abilities]
 //    var voiceLine:
     
@@ -36,7 +30,6 @@ struct Agent {
         self.displayName = dto.displayName
         self.description = dto.description
         self.developerName = dto.developerName
-    //    var developerName:
         self.displayIcon = dto.displayIcon
         self.displayIconSmall = dto.displayIconSmall
         self.bustPortrait = dto.bustPortrait
@@ -46,12 +39,7 @@ struct Agent {
         self.background = dto.background
         self.backgroundGradientColors = dto.backgroundGradientColors
     //    var assetPath: String
-    //    var isFullPortraitRightFacing: Bool
-    //    var isPlayableCharacter: Bool
-    //    var isAvailableForTest: Bool
-    //    var isBaseContent: Bool
         self.role = Role(dto: dto.role)
-    //    var recruitmentData:
         self.abilities = dto.abilities.compactMap { Abilities(dto: $0) }
     //    var voiceLine:
     }
