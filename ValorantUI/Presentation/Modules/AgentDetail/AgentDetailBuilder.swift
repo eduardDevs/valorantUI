@@ -8,7 +8,7 @@
 import Foundation
 
 class AgentDetailBuilder {
-    func build() -> AgentDetailView<AgentDetailViewModel> {
+    func build() -> AgentDetailView {
         let agentDataSource = AgentDataSource()
         let agentRepository = AgentRepository(agentDataSource: agentDataSource)
         let agentUseCase = AgentUseCase(repository: agentRepository)

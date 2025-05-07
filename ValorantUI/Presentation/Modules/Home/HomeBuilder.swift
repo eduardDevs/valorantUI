@@ -8,7 +8,7 @@
 import Foundation
 
 class HomeBuilder {
-    func build() -> HomeView<HomeViewModel> {
+    func build() -> HomeView {
         let agentDataSource = AgentDataSource()
         let agentRepository = AgentRepository(agentDataSource: agentDataSource)
         let agentUseCase = AgentUseCase(repository: agentRepository)

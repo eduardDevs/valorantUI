@@ -11,5 +11,5 @@ struct AbilitiesDTO: Codable {
     var slot: String
     var displayName: String
     var description: String
-    var displayIcon: String
+    var displayIcon: String?
 }

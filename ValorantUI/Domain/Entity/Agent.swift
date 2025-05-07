@@ -21,7 +21,7 @@ struct Agent {
     var background: String
     var backgroundGradientColors: [String]
 //    var assetPath: String
-    var role: Role
+    var role: Role?
     var abilities: [Abilities]
 //    var voiceLine:
     
@@ -32,14 +32,14 @@ struct Agent {
         self.developerName = dto.developerName
         self.displayIcon = dto.displayIcon
         self.displayIconSmall = dto.displayIconSmall
-        self.bustPortrait = dto.bustPortrait
-        self.fullPortrait = dto.fullPortrait
-        self.fullPortraitV2 = dto.fullPortraitV2
+        self.bustPortrait = dto.bustPortrait ?? ""
+        self.fullPortrait = dto.fullPortrait ?? ""
+        self.fullPortraitV2 = dto.fullPortraitV2 ?? ""
         self.killfeedPortrait = dto.killfeedPortrait
-        self.background = dto.background
+        self.background = dto.background ?? ""
         self.backgroundGradientColors = dto.backgroundGradientColors
     //    var assetPath: String
-        self.role = Role(dto: dto.role)
+        self.role = dto.role.map { Role(dto: $0) }
         self.abilities = dto.abilities.compactMap { Abilities(dto: $0) }
     //    var voiceLine:
     }

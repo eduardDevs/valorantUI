@@ -21,7 +21,7 @@ class AgentDetailViewModel: ObservableObject, AgentDetailViewModelProtocol {
         Task {
             do {
                 let agent = try await agentUseCase.getAgent(this: uuid)
-                DispatchQueue.main.async {
+                DispatchQueue.main.sync {
                     self.agent = agent
                     self.getGradientColors()
                 }

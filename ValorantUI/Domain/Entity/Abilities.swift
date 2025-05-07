@@ -17,6 +17,6 @@ struct Abilities {
         self.slot = dto.slot
         self.displayName = dto.displayName
         self.description = dto.description
-        self.displayIcon = dto.displayIcon
+        self.displayIcon = dto.displayIcon ?? ""
     }
 }

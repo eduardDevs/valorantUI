@@ -18,6 +18,6 @@ struct Role{
         self.uuid = dto.uuid
         self.displayName = dto.displayName
         self.description = dto.description
-        self.displayIcon = dto.displayIcon
+        self.displayIcon = dto.displayIcon ?? ""
     }
 }

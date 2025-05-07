@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct AgentDetailView<VM>: View where VM: AgentDetailViewModelProtocol {
-    @ObservedObject var viewModel: VM
+struct AgentDetailView: View {
+    @StateObject var viewModel: AgentDetailViewModel
     @Environment(\.presentationMode) var presentation
     @State private var isTemplateMode = true
+    @State private var rotationX: Double = 0.0
+    @State private var rotationY: Double = 0.0
+    @State private var lastDrag: CGSize = .zero
     
     var body: some View {
         agentView()
@@ -33,6 +36,29 @@ struct AgentDetailView<VM>: View where VM: AgentDetailViewModelProtocol {
                                         isTemplateMode = false
                                     }
                                 }
+                                .rotation3DEffect(
+                                    .degrees(rotationX),
+                                    axis: (x: 1, y: 0, z: 0)
+                                )
+                                .rotation3DEffect(
+                                    .degrees(rotationY),
+                                    axis: (x: 0, y: 1, z: 0)
+                                )
+                                .gesture(
+                                    DragGesture()
+                                        .onChanged { value in
+                                            let deltaX = value.translation.height - lastDrag.height
+                                            let deltaY = value.translation.width - lastDrag.width
+                                            rotationX += Double(deltaX / 2)
+                                            rotationY += Double(deltaY / 2)
+                                            lastDrag = value.translation
+                                        }
+                                        .onEnded { _ in
+                                            lastDrag = .zero
+                                            rotationX = 0.0
+                                            rotationY = 0.0
+                                        }
+                                )
                         } placeholder: {
                         }
                         

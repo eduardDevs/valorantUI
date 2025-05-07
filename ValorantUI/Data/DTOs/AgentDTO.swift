@@ -15,18 +15,18 @@ struct AgentDTO: Codable {
 //    var developerName:
     var displayIcon: String
     var displayIconSmall: String
-    var bustPortrait: String
-    var fullPortrait: String
-    var fullPortraitV2: String
+    var bustPortrait: String?
+    var fullPortrait: String?
+    var fullPortraitV2: String?
     var killfeedPortrait: String
-    var background: String
+    var background: String?
     var backgroundGradientColors: [String]
 //    var assetPath: String
 //    var isFullPortraitRightFacing: Bool
 //    var isPlayableCharacter: Bool
 //    var isAvailableForTest: Bool
 //    var isBaseContent: Bool
-    var role: RoleDTO
+    var role: RoleDTO?
 //    var recruitmentData:
     var abilities: [AbilitiesDTO]
 //    var voiceLine:

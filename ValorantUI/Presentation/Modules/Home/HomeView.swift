@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct HomeView<VM>: View where VM: HomeViewModelProtocol {
-  @ObservedObject var viewModel: VM
+struct HomeView: View {
+  @StateObject var viewModel: HomeViewModel
   @Environment(\.presentationMode) var presentation
 
   var body: some View {
@@ -22,6 +22,7 @@ struct HomeView<VM>: View where VM: HomeViewModelProtocol {
         ScrollView(showsIndicators: false){
           AgentCustomView()
             .padding(.all, 16)
+            agentsList()
         }.onAppear() {
           viewModel.getAgents()
         }
@@ -39,6 +40,23 @@ struct HomeView<VM>: View where VM: HomeViewModelProtocol {
       viewModel.getAgents()
     }
   }
+    
+    func agentsList() -> some View {
+        List {
+            ForEach(viewModel.agents, id: \.uuid) { agent in
+                AsyncImage(url: URL(string: agent.killfeedPortrait)) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: 100)
+                        .clipped()
+                } placeholder: {
+                    ProgressView()
+                        .frame(height: 100)
+                }
+            }
+        }
+    }
 }
 
 #Preview {

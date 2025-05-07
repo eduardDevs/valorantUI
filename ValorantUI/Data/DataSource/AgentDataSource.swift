@@ -34,10 +34,12 @@ class AgentDataSource: AgentDataSourceProtocol {
                 } else {
                     throw AgentDataSourceError.badRequest
                 }
-            } catch {
+            } catch let error {
+                print(error.localizedDescription)
                 throw AgentDataSourceError.decodeError
             }
-        } catch {
+        } catch let error {
+            print(error.localizedDescription)
             throw AgentDataSourceError.badRequest
         }
     }
